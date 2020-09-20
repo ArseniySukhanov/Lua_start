@@ -1,0 +1,1 @@
+If you will delete first parentheses in the following expression it will work as it should. However, sometimes extra parentheses are useful in order to more clear view of code.
