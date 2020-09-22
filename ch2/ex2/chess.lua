@@ -27,20 +27,24 @@ end
 
 
 function addqueen (a, n)
-	if n > N then		--all queens have been placed?
-		printsolution(a)
-		return false
-	else 			--try to place n-th queen
-		for c = 1, N do		-- maybe it could be more optimized but I don't know full sintaxis of language
-			if isplaceok(a, n, c) then
-				a[n] = c	--place n-th queen at column 'c'
-				if not addqueen(a, n + 1) then
-					return false
-				end
+	h = true
+	if n > N then	
+		--all queens have been placed right?
+		for i = 2, N do
+		h = h and isplaceok(a, i, a[i])
+		end
+		if h then
+			printsolution(a)
+		end
+	else 			-- place n-th queen
+		for c = 1, N do
+			for j = 1, n - 1 do
+			h = a[j] ~= c and h
 			end
+				a[n] = c	-- place n-th queen at column 'c'
+				addqueen(a, n + 1)
 		end
 	end
-	return true
 end
 
 --run the program

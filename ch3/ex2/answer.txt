@@ -1,0 +1,4 @@
+1) Because it wraps around and absolute quantity of maximum integer is less by 1 then absolute quantity of minimal integer.
+2) Same
+3) Solution: For multiplying integers a and b we need only number c = a*b % 2^64 because all other bits bigger bits are lost. If c > 0x7ffffff...ff (math max integer) then answer (math.miniinteger + c - 1 - math.maxinteger), else c. So (2^63-1)^2 % 2^64 = (2^126 + 2^64 + 1)% 2^64 = 1 < 2^63. So, we will have answer 1.
+4) Same. (2^63)^2 % 2^64 = 0 < 2^63. So, answer is 0.

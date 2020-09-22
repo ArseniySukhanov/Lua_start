@@ -13,7 +13,7 @@ function isplaceok (a, n, c)
 end
 
 --print a board
-function printsolution (a)
+--[[function printsolution (a)
 	for i = 1, N do				--for each row
 		for j =  1, N do 		--and for each column
 			-- write "X" or "-" plus a space
@@ -22,28 +22,25 @@ function printsolution (a)
 		io.write("\n")
 	end
 	io.write("\n")
-end
+end]]--
 
 
 
-function addqueen (a, n)
+function addqueen (a, n, i)
 	if n > N then		--all queens have been placed?
-		printsolution(a)
-		return false
+		return i+1
 	else 			--try to place n-th queen
-		for c = 1, N do		-- maybe it could be more optimized but I don't know full sintaxis of language
+		for c = 1, N do
 			if isplaceok(a, n, c) then
 				a[n] = c	--place n-th queen at column 'c'
-				if not addqueen(a, n + 1) then
-					return false
-				end
+				i = addqueen(a, n + 1, i)
 			end
 		end
 	end
-	return true
+	return i
 end
 
 --run the program
-addqueen({}, 1)
+print(addqueen({}, 1, 0))
 
 

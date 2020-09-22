@@ -1,0 +1,8 @@
+print("X _ _ _ _ _ _ _")
+print("_ _ _ _ X _ _ _")
+print("_ _ _ _ _ _ _ X")
+print("_ _ _ _ _ X _ _")
+print("_ _ X _ _ _ _ _")
+print("_ _ _ _ _ _ X _")
+print("_ X _ _ _ _ _ _")
+print("_ _ _ X _ _ _ _")
