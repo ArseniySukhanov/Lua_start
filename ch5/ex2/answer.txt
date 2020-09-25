@@ -1,0 +1,2 @@
+After first sentence a.a.a.a.a.a.a.a .... .a = pointer on a
+But in the second sentence we has a.a.a.a = 3. And a.a.a = pointer on a. So a.a.a.a = a["a"] = 3. In other words, in reality we have a = pointer on table with one value in "a" equal 3. So we will have errors if we will try to use a.a.a; a.a.a.a and e.t.c.
