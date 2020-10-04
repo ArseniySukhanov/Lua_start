@@ -1,0 +1,4 @@
+speed of byte < others
+speed of all > others
+line is faster then 2kb if length of line more than 2^13 symbols
+
