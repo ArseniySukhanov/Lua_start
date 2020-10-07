@@ -1,0 +1,1 @@
+Sometimes programers have a need to check that something is equal to some number of special values and dependently of that make some different moves. In this case in C and like-C languages "switch" construct is used.But in the Lua it does not exist, so it is very usable to have some type of substitute like elseif.

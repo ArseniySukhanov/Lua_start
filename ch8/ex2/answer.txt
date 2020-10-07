@@ -1,0 +1,17 @@
+while true do
+	body
+end
+---------------------
+repeat
+	body\
+until false
+---------------------
+::start::
+	body
+goto start
+---------------------
+for var = 1, 2, 0 do
+	body
+end
+=====================
+I prefer the first one because it is most obvious way
