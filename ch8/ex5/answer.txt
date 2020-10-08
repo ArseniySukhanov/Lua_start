@@ -1,0 +1,1 @@
+In my opinion, goto which jumps out of the function could be implemented by usage of goto inside functions and return, however it helps to see what is going on more clearly, and also adds the posibility of usage this function inside other functions.
