@@ -1,0 +1,3 @@
+10	20
+300	100
+it is obvious. Every function which was created by F() has its own not-local x.
